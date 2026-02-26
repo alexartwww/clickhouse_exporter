@@ -15,6 +15,18 @@ To run it:
 Help on flags:
 ```bash
 ./clickhouse_exporter --help
+
+Usage of ./clickhouse_exporter:
+  -clickhouse_only
+    	Expose only Clickhouse metrics, not metrics from the exporter itself
+  -insecure
+    	Ignore server certificate if using https (default true)
+  -scrape_uri string
+    	URI to clickhouse http endpoint (default "http://localhost:8123/")
+  -telemetry.address string
+    	Address on which to expose metrics. (default ":9116")
+  -telemetry.endpoint string
+    	Path under which to expose metrics. (default "/metrics")
 ```
 
 Credentials(if not default):
